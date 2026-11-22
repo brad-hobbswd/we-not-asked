@@ -24,21 +24,24 @@ section{padding:92px 0}.section-kicker{font-size:11px;letter-spacing:.24em;color
 .author{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:center}.author-mark{min-height:290px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#4c3924,#211b14);border:1px solid #725532;font:600 76px var(--serif);color:#d3ad72;letter-spacing:.08em}.author-copy p{color:#cfc4b4}
 footer{padding:36px 0;border-top:1px solid #3c352a;color:#9f9587;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot-title{font:24px var(--serif);color:#e4d7c4}
 .menu-toggle{display:none;background:none;border:1px solid #756043;color:var(--cream);padding:9px 12px}
-@media(max-width:850px){.navlinks{gap:15px}.hero-content{width:67%}@media(max-width:650px){header{height:72px}.brand{font-size:22px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#171613;padding:22px 5%;border-bottom:1px solid #51402a;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.nav-cta{display:block;text-align:center}.hero{min-height:690px}.hero-content{width:100%;padding:85px 0 110px}.hero h1{font-size:clamp(56px,16vw,82px)}.hero p{font-size:22px;max-width:410px}</style>
+@media(max-width:1100px){.hero{aspect-ratio:16/9;min-height:0;background-size:contain;background-position:center}.hero-content{width:92%;padding-bottom:2.5%}}
+@media(max-width:850px){.navlinks{gap:15px;font-size:12px}.hero{aspect-ratio:16/9}.about-grid,.book-grid,.author{gap:30px}.theme-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){header{height:72px}.brand{font-size:22px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#171613;padding:22px 5%;border-bottom:1px solid #51402a;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.nav-cta{display:block;text-align:center}.hero{aspect-ratio:16/9;min-height:0;background-size:contain;background-position:center}.hero-content{width:94%;padding:0 0 2%}.pillar-grid{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid #9c815c;padding:14px}.about-grid,.book-grid,.author{grid-template-columns:1fr}.cross-image{min-height:240px}.theme-grid{grid-template-columns:1fr}.toc{grid-template-columns:1fr}.quote-band blockquote{font-size:32px}.foot{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
 <header>
 <div class="wrap nav">
-<a class="brand" href="#home">WE WERE NOT ASKED<span>BRADLEY HOBBS</span></a>
+<a class="brand" href="index.html">WE WERE NOT ASKED<span>BRADLEY HOBBS</span></a>
 <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">MENU</button>
 <nav class="navlinks" aria-label="Main navigation">
-<a href="#home">Home</a><a href="#book">The Book</a><a href="#themes">Themes</a><a href="#author">About the Author</a><a href="#resources">Resources</a><a class="nav-cta" href="#book">Explore the Book</a>
+<a href="index.html">Home</a><a href="book.html">The Book</a><a href="themes.html">Themes</a><a href="author.html">About the Author</a><a href="resources.html">Resources</a><a class="nav-cta" href="contact.html">Contact</a>
 </nav>
 </div>
 </header>
 <main>
 <section class="hero" id="home">
-<div class="wrap"><div class="hero-content"><div class="actions"><a class="btn gold" href="#book">Discover the Book</a><a class="btn" href="intro.html">Read the Introduction</a></div>
+<div class="wrap"><div class="hero-content"><div class="actions"><a class="btn gold" href="book.html">Discover the Book</a><a class="btn" href="intro.html">Read the Introduction</a></div>
 </div></div>
 </section>
 <div class="pillars"><div class="wrap pillar-grid">
@@ -49,7 +52,7 @@ footer{padding:36px 0;border-top:1px solid #3c352a;color:#9f9587;font-size:12px}
 <section id="about">
 <div class="wrap about-grid"><div class="cross-image" role="img" aria-label="Cross on a hill at sunrise"></div><div class="about-copy"><div class="section-kicker">The heart behind the message</div><h2 class="section-title">The invitation<br>was never ours to control.</h2>
 <p>Christ entrusted His church with the gospel, the teaching of Scripture, discipleship, and the responsibility to serve faithfully. Yet responsibility can become confused with authority when our assumptions, preferences, or judgments begin to stand where Christ never placed them.</p>
-<p><em>We Were Not Asked</em> invites readers to return to the words and character of Jesus, examine the ways we treat people, and consider whether our conduct reflects the Savior we proclaim.</p><a class="btn" href="#book">Read About the Book</a></div></div>
+<p><em>We Were Not Asked</em> invites readers to return to the words and character of Jesus, examine the ways we treat people, and consider whether our conduct reflects the Savior we proclaim.</p><a class="btn" href="book.html">Read About the Book</a></div></div>
 </section>
 <div class="quote-band"><div class="wrap"><blockquote>“We were asked to follow Him.<br>We were not asked to stand in His way.”</blockquote><small>WE WERE NOT ASKED · BRADLEY HOBBS</small></div></div>
 <section class="book-section" id="book"><div class="wrap book-grid">
@@ -76,6 +79,6 @@ footer{padding:36px 0;border-top:1px solid #3c352a;color:#9f9587;font-size:12px}
 <section id="author"><div class="wrap author"><div class="author-mark">BH</div><div class="author-copy"><div class="section-kicker">About the author</div><h2 class="section-title">Bradley Hobbs</h2><p>Bradley Hobbs writes from a desire to bring Scripture into honest conversation with the lived experiences of people within the church. His work invites readers toward biblical reflection, humility, compassion, accountability, and a deeper understanding of the character of Jesus.</p><p><em>We Were Not Asked</em> is an invitation to examine ourselves with the same sincerity we bring to examining others.</p></div></div></section>
 <section id="resources" style="padding-top:35px"><div class="wrap" style="text-align:center"><div class="section-kicker">Continue the conversation</div><h2 class="section-title">Read. Reflect. Reconsider.</h2><p style="color:#c7bcad;max-width:650px;margin:0 auto 25px">Begin with the manuscript's introduction, then walk through the chapters at your own pace.</p><a class="btn gold" href="intro.html">Read the Introduction</a></div></section>
 </main>
-<footer><div class="wrap foot"><div><div class="foot-title">WE WERE NOT ASKED</div><span>Bradley Hobbs · A biblical examination</span></div><div>© Bradley Hobbs · All rights reserved</div><a href="#home">Back to top ↑</a></div></footer>
+<footer><div class="wrap foot"><div><div class="foot-title">WE WERE NOT ASKED</div><span>Bradley Hobbs · A biblical examination</span></div><div>© Bradley Hobbs · All rights reserved</div><a href="index.html">Home ↑</a></div></footer>
 </body>
 </html>
